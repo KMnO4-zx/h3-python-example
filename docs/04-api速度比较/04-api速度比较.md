@@ -1,7 +1,7 @@
 # API速度比较
 
 
-我们在各种API中对一个简单的玩具计算任务进行计时。
+我们在各种API中对一个简单的demo计算任务进行计时。
 
 
 我们还比较了在其中一种较快的API（使用H3索引的`int`表示法）中完成大部分计算，然后将结果转换为更熟悉的Python `str`对象格式的选项。
@@ -55,7 +55,7 @@ compute(h3.api.basic_str)
 ```
 
     41.4 ms ± 906 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
-    
+
 
 
 ```python
@@ -65,7 +65,7 @@ compute(h3.api.basic_int)
 ```
 
     26.5 ms ± 1.22 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
-    
+
 
 
 ```python
@@ -75,7 +75,7 @@ compute(h3.api.memview_int)
 ```
 
     5.54 ms ± 155 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-    
+
 
 
 ```python
@@ -85,7 +85,7 @@ compute(h3.api.numpy_int)
 ```
 
     5.25 ms ± 175 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-    
+
 
 # 计算' int ' api并转换为' str '
 
@@ -97,7 +97,7 @@ compute_and_convert(h3.api.basic_int)
 ```
 
     25.1 ms ± 280 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
-    
+
 
 
 ```python
@@ -107,7 +107,7 @@ compute_and_convert(h3.api.memview_int)
 ```
 
     5.66 ms ± 88.1 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-    
+
 
 
 ```python
@@ -117,4 +117,4 @@ compute_and_convert(h3.api.numpy_int)
 ```
 
     5.56 ms ± 77.9 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-    
+
