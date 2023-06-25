@@ -1,0 +1,12 @@
+h3>=3.6.1
+
+jupyterlab
+pandas
+geopandas
+matplotlib
+descartes
+folium
+rtree
+xarray
+rasterio
+tabulate
