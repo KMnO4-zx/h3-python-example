@@ -1,12 +1,8 @@
-h3>=3.6.1
-
-jupyterlab
+h3
 pandas
 geopandas
 matplotlib
-descartes
-folium
-rtree
-xarray
-rasterio
-tabulate
+geodatasets
+contextily
+matplotlib
+numpy
